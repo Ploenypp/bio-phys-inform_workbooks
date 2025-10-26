@@ -45,14 +45,14 @@ def group_by_distance(dist_array, threshold=3) :
         if any(i in g for g in groups) : continue
 
         for j in range(i,n) :
-            if 0 < dist_array[i][j] <= 3 :
+            if 0 < dist_array[i][j] <= threshold :
                 if i not in group : group.append(i)
                 group.append(j)
 
-        if len(group) == 0 : group = [dist_array[i][i]]
+        if len(group) == 0 : group = [i]
 
         groups.append(group)
-    
+        
     return groups
 
 def convert_index_coor(groups, dist_dict) :
