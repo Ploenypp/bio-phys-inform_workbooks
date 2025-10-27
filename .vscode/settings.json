@@ -1,0 +1,15 @@
+{
+    "markdown.preview.fontFamily": "Monaco, 'Courier New', monospace",
+    "notebook.output.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "chat.editor.fontFamily": "editor",
+    "scm.inputFontFamily": "editor",
+    "debug.console.fontFamily": "editor",
+    "editor.inlayHints.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.codeLensFontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "markdown.preview.fontSize": 14,
+    "markdown.preview.breaks": false,
+    "gnuplot.builder.maxbuffer": 1,
+    "gnuplot.watcher.timeout": 1,
+    "gnuplot.watcher.delay": 1
+}
