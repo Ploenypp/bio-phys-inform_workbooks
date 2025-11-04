@@ -3,6 +3,7 @@ personal continuation of the second practical of the "Python for Biology" course
 """
 
 from math import sqrt
+import time
 from GoL import *
 
 def find_living(grid) :
@@ -120,7 +121,10 @@ def simulation(grid, generations, display=False) :
     aux = grid.copy()
     grid_history = list()
     for i in range(generations) : 
-        if display: display_grid(aux)
+        if display: 
+            display_grid(aux)
+            time.sleep(0.05)
+
         grid_history.append(aux)
         aux = next_generation(aux)
     return grid_history
