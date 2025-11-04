@@ -136,7 +136,7 @@ def identify_configs(grid_history, display=False) :
         for g in grid_configs(grid) :
             if g not in configs : configs.append(g)
 
-    configs_dict = {chr(65 + i) : configs[i] for i in range(len(configs))}
+    configs_dict = {i : configs[i] for i in range(len(configs))}
 
     if display :
         for id, grid in configs_dict.items() :
