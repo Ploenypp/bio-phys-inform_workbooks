@@ -163,5 +163,13 @@ def configs_over_gen(grid_history) :
         configs = [get_config_id(configs_id, g) for g in grid_configs(grid)]
         config_history[i] = configs
 
-    return config_history, configs_id            
+    return config_history, configs_id      
+
+def get_config_pos(config_history) :
+    combi_pos = dict()
+    for gen, configs in config_history.items() :
+        for c in configs :
+            if c not in combi_pos.keys() : combi_pos[c] = [gen]
+            else : combi_pos[c].append(gen)
+    return combi_pos      
 
